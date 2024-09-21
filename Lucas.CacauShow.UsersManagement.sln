@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - App", "1 - App", "{C628DA34-8E84-42B3-AC75-FBCBC741FA0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Api", "2 - Api", "{01138666-AEFE-4B5A-9478-575B9E39DF05}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Core", "3 - Core", "{3D6F9B66-C74A-4DD6-8D12-218A5060290C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{7533CFE3-A8F5-4229-88B7-D5571D1B4066}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucas.CacauShow.UsersManagement.WebAPI", "Lucas.CacauShow.UsersManagement.WebAPI\Lucas.CacauShow.UsersManagement.WebAPI.csproj", "{A2654054-A8A5-4AC8-89DF-6B3202F51317}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Shared", "5 - Shared", "{18C320FC-5CFD-4A72-8D3E-581756E0BEDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucas.CacauShow.UsersManagement.Models", "Lucas.CacauShow.UsersManagement.ViewModel\Lucas.CacauShow.UsersManagement.Models.csproj", "{0DBE5AE2-D323-4FD0-AB19-D91519FC54EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucas.CacauShow.UsersManagement.Application", "Lucas.CacauShow.UsersManagement.Application\Lucas.CacauShow.UsersManagement.Application.csproj", "{AFD6629E-4C9C-4633-A1DD-FD8A7E8F0342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucas.CacauShow.UsersManagement.Domain", "Luca.CacauShow.UsersManagement.Domain\Lucas.CacauShow.UsersManagement.Domain.csproj", "{61EDD713-ED88-4148-8B6A-DD26A488BAB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucas.CacauShow.UsersManagement.Repository", "Lucas.CacauShow.UsersManagement.Repository\Lucas.CacauShow.UsersManagement.Repository.csproj", "{CD7938FE-2E7C-476C-9D16-4B6D1F74E8E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucas.CacauShow.UsersManagement.Contracts", "Lucas.CacauShow.UsersManagement.Contracts\Lucas.CacauShow.UsersManagement.Contracts.csproj", "{2F0D94F6-5DCB-4703-823E-539BDA336499}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucas.CacauShow.UsersManagement.Persistence", "Lucas.CacauShow.UsersManagement.Persistence\Lucas.CacauShow.UsersManagement.Persistence.csproj", "{8B0BB285-30F3-4C63-B3A7-96B214E470D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2654054-A8A5-4AC8-89DF-6B3202F51317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2654054-A8A5-4AC8-89DF-6B3202F51317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2654054-A8A5-4AC8-89DF-6B3202F51317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2654054-A8A5-4AC8-89DF-6B3202F51317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DBE5AE2-D323-4FD0-AB19-D91519FC54EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBE5AE2-D323-4FD0-AB19-D91519FC54EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBE5AE2-D323-4FD0-AB19-D91519FC54EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBE5AE2-D323-4FD0-AB19-D91519FC54EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFD6629E-4C9C-4633-A1DD-FD8A7E8F0342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFD6629E-4C9C-4633-A1DD-FD8A7E8F0342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFD6629E-4C9C-4633-A1DD-FD8A7E8F0342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFD6629E-4C9C-4633-A1DD-FD8A7E8F0342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61EDD713-ED88-4148-8B6A-DD26A488BAB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61EDD713-ED88-4148-8B6A-DD26A488BAB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61EDD713-ED88-4148-8B6A-DD26A488BAB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61EDD713-ED88-4148-8B6A-DD26A488BAB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD7938FE-2E7C-476C-9D16-4B6D1F74E8E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD7938FE-2E7C-476C-9D16-4B6D1F74E8E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD7938FE-2E7C-476C-9D16-4B6D1F74E8E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD7938FE-2E7C-476C-9D16-4B6D1F74E8E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F0D94F6-5DCB-4703-823E-539BDA336499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F0D94F6-5DCB-4703-823E-539BDA336499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F0D94F6-5DCB-4703-823E-539BDA336499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F0D94F6-5DCB-4703-823E-539BDA336499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B0BB285-30F3-4C63-B3A7-96B214E470D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B0BB285-30F3-4C63-B3A7-96B214E470D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B0BB285-30F3-4C63-B3A7-96B214E470D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B0BB285-30F3-4C63-B3A7-96B214E470D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A2654054-A8A5-4AC8-89DF-6B3202F51317} = {01138666-AEFE-4B5A-9478-575B9E39DF05}
+		{0DBE5AE2-D323-4FD0-AB19-D91519FC54EF} = {18C320FC-5CFD-4A72-8D3E-581756E0BEDC}
+		{AFD6629E-4C9C-4633-A1DD-FD8A7E8F0342} = {3D6F9B66-C74A-4DD6-8D12-218A5060290C}
+		{61EDD713-ED88-4148-8B6A-DD26A488BAB4} = {3D6F9B66-C74A-4DD6-8D12-218A5060290C}
+		{CD7938FE-2E7C-476C-9D16-4B6D1F74E8E0} = {7533CFE3-A8F5-4229-88B7-D5571D1B4066}
+		{2F0D94F6-5DCB-4703-823E-539BDA336499} = {18C320FC-5CFD-4A72-8D3E-581756E0BEDC}
+		{8B0BB285-30F3-4C63-B3A7-96B214E470D2} = {7533CFE3-A8F5-4229-88B7-D5571D1B4066}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC066CC8-1DED-4B0F-B21C-B359F355E6A7}
+	EndGlobalSection
+EndGlobal
