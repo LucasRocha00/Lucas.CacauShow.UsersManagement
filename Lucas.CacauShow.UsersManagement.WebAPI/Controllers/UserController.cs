@@ -34,7 +34,14 @@ namespace Lucas.CacauShow.UsersManagement.WebAPI.Controllers
         [HttpPost]
         public async Task Post(UserRequest user)
         {
-            await _userService.InsertUser(user);
+            try
+            {
+                await _userService.InsertUser(user);
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
 
         [HttpPut]

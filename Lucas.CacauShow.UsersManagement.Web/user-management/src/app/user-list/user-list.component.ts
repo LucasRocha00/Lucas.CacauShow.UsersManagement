@@ -25,9 +25,15 @@ export class UserListComponent implements OnInit {
         this.loading = false;
       },
       (error) => {
-        console.error('Erro ao buscar usuários', error);
+        Swal.fire({
+          title: 'Erro!',
+          text: 'Erro ao listar os usuários!',
+          icon: 'error',
+          confirmButtonText: 'Ok'
+        });
         this.error = 'Não foi possível carregar os usuários.';
         this.loading = false;
+        this.router.navigate(['/']);
       }
     );
   }

@@ -49,4 +49,12 @@ export class UserService {
     });
     return this.http.delete(`${this.apiUrl}/${IdUser}`, { headers });
   }
+
+  createUser(userData: any): Observable<any> {
+    const token = localStorage.getItem('token');
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    });
+    return this.http.post(this.apiUrl, userData, { headers });
+  }
 }

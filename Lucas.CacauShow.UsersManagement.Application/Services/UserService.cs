@@ -38,6 +38,8 @@ namespace Lucas.CacauShow.UsersManagement.Application.Services
         public async Task InsertUser(UserRequest userRequest)
         {
             var user = _mapper.Map<User>(userRequest);
+            user.CreationDate = DateTime.Now;
+            user.Password = "SenhaDefault";
             await _userRepository.InsertUser(user);
         }
 

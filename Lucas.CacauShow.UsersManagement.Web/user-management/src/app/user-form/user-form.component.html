@@ -1,21 +1,21 @@
 <div class="container mt-5">
   <h2>Cadastro de Usuário</h2>
-  <form (ngSubmit)="onSubmit()">
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="name">Nome</label>
-      <input type="text" class="form-control" id="name" [(ngModel)]="name" name="name" required>
+      <input type="text" class="form-control" id="name" formControlName="name" [(ngModel)]="name" name="name" required>
     </div>
     <div class="form-group">
       <label for="email">Email</label>
-      <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email" required>
+      <input type="email" class="form-control" id="email" formControlName="email" [(ngModel)]="email" name="email" required>
     </div>
     <div class="form-group">
       <label for="login">Login</label>
-      <input type="text" class="form-control" id="login" [(ngModel)]="login" name="login" required>
+      <input type="text" class="form-control" id="login" formControlName="login" [(ngModel)]="login" name="login" required>
     </div>
     <div class="form-group">
       <label for="cpf">CPF</label>
-      <input type="text" class="form-control" id="cpf" [(ngModel)]="cpf" name="cpf" required>
+      <input type="text" class="form-control" id="cpf" formControlName="cpf" [(ngModel)]="cpf" name="cpf" required>
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
     <button class="btn btn-warning" (click)="voltar()">Voltar</button>
