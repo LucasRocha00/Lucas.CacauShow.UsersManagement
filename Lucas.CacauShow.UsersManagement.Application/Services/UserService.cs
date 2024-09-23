@@ -46,5 +46,10 @@ namespace Lucas.CacauShow.UsersManagement.Application.Services
             var user = _mapper.Map<User>(userRequest);
             await _userRepository.UpdateUser(id, user);
         }
+
+        public async Task<bool> DoLogon(string user, string password)
+        {
+            return await _userRepository.DoLogon(user, password);
+        }
     }
 }

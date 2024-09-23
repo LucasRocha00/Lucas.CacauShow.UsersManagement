@@ -14,5 +14,6 @@ namespace Lucas.CacauShow.UsersManagement.Domain.Entities
         public string CPF { get; set; }
         public string Email { get; set; }
         public DateTime CreationDate { get; set; }
+        public string Password { get; set; }
     }
 }

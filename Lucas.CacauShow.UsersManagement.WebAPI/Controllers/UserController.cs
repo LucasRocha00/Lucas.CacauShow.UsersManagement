@@ -1,12 +1,13 @@
 using Lucas.CacauShow.UsersManagement.Contracts.Services;
 using Lucas.CacauShow.UsersManagement.Models.Requests;
 using Lucas.CacauShow.UsersManagement.Models.Responses;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lucas.CacauShow.UsersManagement.WebAPI.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
+    [ApiController, Authorize]
+    [Route("api/[controller]")]
     public class UserController : ControllerBase
     {
         private readonly ILogger<UserController> _logger;
@@ -36,13 +37,13 @@ namespace Lucas.CacauShow.UsersManagement.WebAPI.Controllers
             await _userService.InsertUser(user);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut]
         public async Task Put(int id, UserRequest user)
         {
             await _userService.UpdateUser(id, user);
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{idUser}")]
         public async Task Delete(int idUser)
         {
             await _userService.DeleteUser(idUser);

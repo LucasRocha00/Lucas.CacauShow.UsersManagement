@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucas.CacauShow.UsersManage
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucas.CacauShow.UsersManagement.Persistence", "Lucas.CacauShow.UsersManagement.Persistence\Lucas.CacauShow.UsersManagement.Persistence.csproj", "{8B0BB285-30F3-4C63-B3A7-96B214E470D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucas.CacauShow.UsersManagement.Web", "Lucas.CacauShow.UsersManagement.Web\Lucas.CacauShow.UsersManagement.Web.csproj", "{232819F3-C0A8-48C6-A88A-FC2B3033D881}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{8B0BB285-30F3-4C63-B3A7-96B214E470D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B0BB285-30F3-4C63-B3A7-96B214E470D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B0BB285-30F3-4C63-B3A7-96B214E470D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{232819F3-C0A8-48C6-A88A-FC2B3033D881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{232819F3-C0A8-48C6-A88A-FC2B3033D881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{232819F3-C0A8-48C6-A88A-FC2B3033D881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{232819F3-C0A8-48C6-A88A-FC2B3033D881}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +79,7 @@ Global
 		{CD7938FE-2E7C-476C-9D16-4B6D1F74E8E0} = {7533CFE3-A8F5-4229-88B7-D5571D1B4066}
 		{2F0D94F6-5DCB-4703-823E-539BDA336499} = {18C320FC-5CFD-4A72-8D3E-581756E0BEDC}
 		{8B0BB285-30F3-4C63-B3A7-96B214E470D2} = {7533CFE3-A8F5-4229-88B7-D5571D1B4066}
+		{232819F3-C0A8-48C6-A88A-FC2B3033D881} = {C628DA34-8E84-42B3-AC75-FBCBC741FA0E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DC066CC8-1DED-4B0F-B21C-B359F355E6A7}

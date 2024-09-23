@@ -3,6 +3,7 @@ using Lucas.CacauShow.UsersManagement.Contracts.Repositories;
 using Lucas.CacauShow.UsersManagement.Domain.Entities;
 using Lucas.CacauShow.UsersManagement.Models.Responses;
 using Lucas.CacauShow.UsersManagement.Persistence.Context;
+using Lucas.CacauShow.UsersManagement.Persistence.Util;
 using Microsoft.EntityFrameworkCore;
 
 namespace Lucas.CacauShow.UsersManagement.Repository
@@ -21,6 +22,14 @@ namespace Lucas.CacauShow.UsersManagement.Repository
             _context.User.Remove(user);
 
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<bool> DoLogon(string login, string password)
+        {
+            var passdef = HashManager.Hash("123456");
+            var user = await _context.User.FirstOrDefaultAsync(x => x.Login == login);
+
+            return HashManager.Verify(password, user.Password);
         }
 
         public async Task<IEnumerable<User>> GetAllUsers()

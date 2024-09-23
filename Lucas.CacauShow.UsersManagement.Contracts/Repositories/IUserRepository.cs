@@ -7,6 +7,7 @@ namespace Lucas.CacauShow.UsersManagement.Contracts.Repositories
     public interface IUserRepository
     {
         Task DeleteUser(int idUser);
+        Task<bool> DoLogon(string user, string password);
         Task<IEnumerable<User>> GetAllUsers();
         Task<User> GetUser(int id);
         Task InsertUser(User user);
