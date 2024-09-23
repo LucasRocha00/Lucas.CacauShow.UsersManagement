@@ -32,3 +32,27 @@ table {
 .mat-elevation-z8 {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th.mat-header-cell {
+  background-color: #f2f2f2; /* Cor de fundo do cabeçalho */
+  padding: 16px; /* Espaçamento interno */
+  text-align: left; /* Alinhamento do texto */
+}
+
+td.mat-cell {
+  padding: 16px; /* Espaçamento interno para as células */
+  border-top: 1px solid #ddd; /* Borda superior */
+}
+
+th.mat-header-cell, td.mat-cell {
+  border-right: 1px solid #ddd; /* Borda entre colunas */
+}
+
+th.mat-header-cell:last-child, td.mat-cell:last-child {
+  border-right: none; /* Remove a borda da última coluna */
+}

@@ -10,6 +10,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class UserFormComponent implements OnInit {
   userForm: FormGroup;
   userId!: number;
+  name: string = '';
+  email: string = '';
+  login: string = '';
+  cpf: string = '';
 
   constructor(
     private route: ActivatedRoute,
@@ -19,7 +23,9 @@ export class UserFormComponent implements OnInit {
   ) {
     this.userForm = this.fb.group({
       name: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]]
+      email: ['', [Validators.required, Validators.email]],
+      login: ['', [Validators.required, Validators.email]],
+      cpf: ['', [Validators.required, Validators.email]]
     });
   }
 
@@ -30,17 +36,17 @@ export class UserFormComponent implements OnInit {
 
   loadUser(): void {
     this.userService.getUserById(this.userId).subscribe(user => {
-      this.userForm.patchValue(user); // Preenche o formulário com os dados do usuário
+      this.userForm.patchValue(user);
     });
+  }
+
+  voltar(): void {
+    this.router.navigate(['/users']);
   }
 
   onSubmit(): void {
     if (this.userForm.valid) {
-      // Chame o serviço para atualizar o usuário
-      // this.userService.updateUser(this.userId, this.userForm.value).subscribe(() => {
-      //   this.router.navigate(['/']); // Redirecione após a edição
-      // });
-      console.log('Usuário atualizado:', this.userForm.value); // Remova isso quando implementar a atualização
+      console.log('Usuário atualizado:', this.userForm.value);
     }
   }
 }

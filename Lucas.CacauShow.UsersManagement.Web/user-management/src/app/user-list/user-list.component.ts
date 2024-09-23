@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router'; // Adicione o Router
+import { Router } from '@angular/router';
 import { UserService } from '../user.service';
 import Swal from 'sweetalert2';
 
@@ -33,7 +33,11 @@ export class UserListComponent implements OnInit {
   }
 
   editUser(user: any): void {
-    this.router.navigate(['/edit', user.id]); // Navega para a página de edição
+    this.router.navigate(['/edit', user.id]);
+  }
+
+  newUser(): void {
+    this.router.navigate(['/add-user']);
   }
 
   deleteUser(userId: number): void {
@@ -45,11 +49,9 @@ export class UserListComponent implements OnInit {
       confirmButtonText: "Sim",
       denyButtonText: `Não`
     }).then((result) => {
-      /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
-        // Chame o método do serviço para deletar o usuário
         this.userService.deleteUser(userId).subscribe(() => {
-          this.loadUsers(); // Recarregue a lista de usuários
+          this.loadUsers();
         });
 
         Swal.fire({
